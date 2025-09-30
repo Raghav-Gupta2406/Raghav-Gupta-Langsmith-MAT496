@@ -17,6 +17,11 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Source File:** [lesson2_TypesOfRuns.ipynb](lesson2_TypesOfRuns.ipynb) 
 
  ### LESSON 3: Alternative Ways To Trace
- - **learned:** Learned to use the with trace() context manager for explicit control over trace inputs/outputs and learned that for LangChain-compatible providers, setting environment variables enables automatic tracing across all LLM calls.
+ - **Learned:** Learned to use the with trace() context manager for explicit control over trace inputs/outputs and learned that for LangChain-compatible providers, setting environment variables enables automatic tracing across all LLM calls.
  - **Tweak:** Removed the decorator from generate_response and implemented a custom with trace() block, adding the unique tag manual-context-manager to the trace, demonstrating precise manual control.
  - **Source File** [lesson3_AlterWaysToTrace.ipynb](lesson3_AlterWaysToTrace.ipynb) 
+
+ ### LESSON 4: Conversational Threads
+ - **Learned:** Learned that conversational threads are tracked by passing a consistent, unique identifier (session_id, thread_id, or conversation_id) within the langsmith_extra metadata of sequential runs.
+ - **Tweak:** Implemented conversation tracking by generating a Python uuid.uuid4() and passing this value as the conversation_id in the langsmith_extra parameter for both turns of the chat.
+ - **Source File:** [lesson4_conversational_threads.ipynb](lesson4_conversational_threads.ipynb)
