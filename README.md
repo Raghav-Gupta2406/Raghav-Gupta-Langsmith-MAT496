@@ -33,3 +33,8 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** Learned how to programmatically manage Langsmith Datasets using the langsmith.Client to perform a test-driven workflow. Specifically, utilized the client.create_dataset() method to initialize a new dataset and client.create_examples() for bulk uploading input/reference output pairs.
  - **Tweak:** The core tweak was to abandon the pre-existing dataset ID and use the SDK's client.create_dataset() method to programmatically create a new dataset with a unique name using uuid.uuid4(). This ensured the entire dataset creation and example upload process could be run end-to-end within the notebook.
  - **Source File:** [M2L1_Datasets.ipynb](M2L1_Datasets.ipynb)
+
+ ### LESSON 2: Evaluators
+ - **Learned:** Learned that LangSmith evaluators are functions that take a Run and an Example and return a Feedback object. We implemented LLM as Judge evaluation by defining criteria in a prompt and using a Pydantic schema for mandatory structured output.
+ - **Tweak:** Replaced the proprietary OpenAI structured output method (client.beta.chat.completions.parse) with a Groq-compatible structured output chain using ChatGroq.with_structured_output. This allows us to maintain the LLM-as-Judge evaluation logic with structured data while adhering to the Groq LLM requirement.
+ - **Source File:** [M2L2_Evaluators.ipynb](M2L2_Evaluators.ipynb)
