@@ -38,3 +38,8 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** Learned that LangSmith evaluators are functions that take a Run and an Example and return a Feedback object. We implemented LLM as Judge evaluation by defining criteria in a prompt and using a Pydantic schema for mandatory structured output.
  - **Tweak:** Replaced the proprietary OpenAI structured output method (client.beta.chat.completions.parse) with a Groq-compatible structured output chain using ChatGroq.with_structured_output. This allows us to maintain the LLM-as-Judge evaluation logic with structured data while adhering to the Groq LLM requirement.
  - **Source File:** [M2L2_Evaluators.ipynb](M2L2_Evaluators.ipynb)
+
+ ### LESSON 3: Experiments
+ - **Learned:** Learned to use langsmith.evaluate to systematically compare different versions of an application against a dataset. We ran experiments to compare two Groq models (Llama vs Mixtral) and confirmed how parameters like experiment_prefix, metadata, num_repetitions, and max_concurrency control the evaluation process.
+ - **Tweak:** 1. Robust Dataset Fetching: Implemented logic to dynamically retrieve the name of the most recently created dataset using client.list_datasets() for stability. 2. Custom Constraint Evaluator: Created a new evaluator, is_three_sentences, to enforce the RAG system prompt's "three sentences maximum" rule, adding a layer of quality assurance to the experiment.
+ - **Source File:** [M2L3_experiments.ipynb](M2L2_experiments.ipynb)
