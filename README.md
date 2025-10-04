@@ -49,7 +49,12 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  
  - **Source File:** No code was provided to edit, as this video focused entirely on result analysis.
 
- ### Lesson 5: Pairwise Experiments
+ ### LESSON 5: Pairwise Experiments
  - **Learned:** Learned how to use Langsmith's `client.evaluate()` function to run multiple models against a dataset and use custom Pydantic schemas for automated LLM-as-a-Judge scoring, which is necessary for quantitative evaluation.
  - **Tweak:** Converted all API calls to use **Groq** and changed the experiment context from generic "Meeting Transcripts" to specific.
  - **Source File:** [M2L5_PairwiseExps.ipynb](M2L5_PairwiseExps.ipynb)
+
+ ### LESSON 6: Summary Evaluators
+ - **Learned:** Learned how to create and use summary evaluators, which are crucial for computing aggregate metrics (like F1-Score) over the results of an entire experiment, giving a holistic view of model performance rather than just scoring individual outputs.
+ - **Tweak:** Adapted the Toxicity Classifier to run on Groq by converting the original OpenAI structured output call into a LangChain/Pydantic structure. 
+ - **Source FIle:** [M2L6_SummEvaluators.ipynb](M2L6_SummEvaluators.ipynb)
