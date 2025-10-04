@@ -43,3 +43,9 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** Learned to use langsmith.evaluate to systematically compare different versions of an application against a dataset. We ran experiments to compare two Groq models (Llama vs Mixtral) and confirmed how parameters like experiment_prefix, metadata, num_repetitions, and max_concurrency control the evaluation process.
  - **Tweak:** 1. Robust Dataset Fetching: Implemented logic to dynamically retrieve the name of the most recently created dataset using client.list_datasets() for stability. 2. Custom Constraint Evaluator: Created a new evaluator, is_three_sentences, to enforce the RAG system prompt's "three sentences maximum" rule, adding a layer of quality assurance to the experiment.
  - **Source File:** [M2L3_experiments.ipynb](M2L3_experiments.ipynb)
+
+ ### LESSON 4: Analyzing Experiment Results
+ - **Learned:** In this video, I learned how to interpret and analyze the results of experiments. LangSmith provides detailed dashboards and analytics that show how models perform over time, making it easier to track progress and spot weaknesses. I saw a direct comparison between ChatGPT 4o and 3.5 Turbo, where 4o was more accurate and concise but slightly slower. The analysis highlighted the value of running structured experiments, since they reveal not just raw outputs but measurable differences in performance. This reinforced the importance of evaluation when choosing or fine-tuning models for real-world applications.
+ 
+ - **Source File:** No code was provided to edit, as this video focused entirely on result analysis.
+
