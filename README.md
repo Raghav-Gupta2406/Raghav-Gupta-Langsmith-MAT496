@@ -49,3 +49,7 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  
  - **Source File:** No code was provided to edit, as this video focused entirely on result analysis.
 
+ ### Lesson 5: Pairwise Experiments
+ - **Learned:** Learned how to use Langsmith's `client.evaluate()` function to run multiple models against a dataset and use custom Pydantic schemas for automated LLM-as-a-Judge scoring, which is necessary for quantitative evaluation.
+ - **Tweak:** Converted all API calls to use **Groq** and changed the experiment context from generic "Meeting Transcripts" to specific.
+ - **Source File:** [M2L5_PairwiseExps.ipynb](M2L5_PairwiseExps.ipynb)
