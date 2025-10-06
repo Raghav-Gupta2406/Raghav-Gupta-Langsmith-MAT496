@@ -58,3 +58,12 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** Learned how to create and use summary evaluators, which are crucial for computing aggregate metrics (like F1-Score) over the results of an entire experiment, giving a holistic view of model performance rather than just scoring individual outputs.
  - **Tweak:** Adapted the Toxicity Classifier to run on Groq by converting the original OpenAI structured output call into a LangChain/Pydantic structure. 
  - **Source FIle:** [M2L6_SummEvaluators.ipynb](M2L6_SummEvaluators.ipynb)
+
+
+ ## MODULE 3
+
+ ### LESSON 1: Playground ExperimentS
+ - **Learned:**  I learned how to use the LangSmith Playground to systematically evaluate and compare language models. The key takeaways were running experiments over a dataset, testing different prompts, and analyzing the side-by-side outputs of two different models to gauge their performance on the same inputs.
+ - **Tweak:** In the code, I customized the dataset by creating new question-and-answer pairs. Within the LangSmith Playground, I experimented by modifying the system and user prompts and switching between different GPT models to observe how the changes affected the responses.
+ - **Source File:** [playground_experiments.ipynb](playground_experiments.ipynb)
+
