@@ -67,3 +67,7 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Tweak:** In the code, I customized the dataset by creating new question-and-answer pairs. Within the LangSmith Playground, I experimented by modifying the system and user prompts and switching between different GPT models to observe how the changes affected the responses.
  - **Source File:** [playground_experiments.ipynb](playground_experiments.ipynb)
 
+### LESSON 2: Prompt Hub
+ - **Learned:** I learned how to use the client.push_prompt() function to programmatically version control custom ChatPromptTemplate objects. This process is essential for managing model personas and prompt iterations outside of the LangSmith UI.
+ - **Tweak:** I completely replaced the original "Pirate Friend" persona and flow with a unique "Advanced 2500 AI" persona for execution.
+ - **Source File:** [prompt_hub.ipynb](prompt_hub.ipynb)
