@@ -71,3 +71,8 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** I learned how to use the client.push_prompt() function to programmatically version control custom ChatPromptTemplate objects. This process is essential for managing model personas and prompt iterations outside of the LangSmith UI.
  - **Tweak:** I completely replaced the original "Pirate Friend" persona and flow with a unique "Advanced 2500 AI" persona for execution.
  - **Source File:** [prompt_hub.ipynb](prompt_hub.ipynb)
+
+ ### LESSON 3: Prompt Engineering Lifecycle
+ - **Learned:** I learned about the prompt engineering lifecycle by building a complete, end-to-end example. I focused on using the playground and the prompt hub tools. I then experimented by applying the prompt to a dataset and included a small bit of Python code as an example within the prompt itself.
+ - **Tweak:**  I didn't make many changes to the core program, but I spent time testing it with a variety of different technical questions to see how the prompt behaved.
+ - **Source File:** [prompt_engineering_lifecycle.ipynb](prompt_engineering_lifecycle.ipynb)
