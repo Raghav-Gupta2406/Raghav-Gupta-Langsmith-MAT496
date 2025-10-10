@@ -76,3 +76,7 @@ This repository documents my progress through Modules 1 and 2 of the Langsmith c
  - **Learned:** I learned about the prompt engineering lifecycle by building a complete, end-to-end example. I focused on using the playground and the prompt hub tools. I then experimented by applying the prompt to a dataset and included a small bit of Python code as an example within the prompt itself.
  - **Tweak:**  I didn't make many changes to the core program, but I spent time testing it with a variety of different technical questions to see how the prompt behaved.
  - **Source File:** [prompt_engineering_lifecycle.ipynb](prompt_engineering_lifecycle.ipynb)
+
+ ### LESSON 4: Prompt Canvas
+ - **Learned:** I learned how to effectively use the Prompt Canvas, which is a powerful tool for LLMs to generate tailor-made prompts for my specific needs. I then applied this knowledge by modifying the two systems I created in the Prompt Hub and experimenting with custom actions.
+ - **Source Code:** No code was provided to edit.
